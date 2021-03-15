@@ -1,0 +1,8 @@
+# acm certificate rotation checking
+- name: copy certificates to certificate folder
+  win_aws_acm_autorenewal:
+    hostname: '{{ inventory_hostname }}'
+    passphrase: '{{ inventory_hostname }}'
+    basepath: '{{ windows_acm_basepath }}'
+    region: '{{ aws_region }}'
+  ignore_errors: yes
