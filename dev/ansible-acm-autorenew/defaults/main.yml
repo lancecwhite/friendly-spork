@@ -1,0 +1,4 @@
+# common
+local_key_path: "" # default key path
+local_cert_path: "" # default certificate path
+aws_region: "us-east-1" # default aws region
